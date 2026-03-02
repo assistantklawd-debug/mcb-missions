@@ -3,14 +3,16 @@
     "name": "Client Portal",
     "description": "client portal of past, current jobs & leads. they should be able to submit information with pictures to generated leads. ",
     "blueprintId": "software-build",
-    "status": "building",
-    "stage": "building",
-    "progress": 25,
+    "status": "ship",
+    "stage": "ship",
+    "progress": 100,
     "agents": [],
     "id": "8l0sg1f",
     "createdAt": "2026-03-02",
     "updatedAt": "2026-03-02",
-    "syncedAt": "2026-03-02T04:19:01.507Z"
+    "validated": true,
+    "validationNotes": "Manual validation",
+    "syncedAt": "2026-03-02T04:25:44.907Z"
   },
   "blueprint": {
     "id": "software-build",
@@ -146,6 +148,6 @@
     ],
     "createdAt": "2026-03-01",
     "updatedAt": "2026-03-01",
-    "syncedAt": "2026-03-02T04:19:01.507Z"
+    "syncedAt": "2026-03-02T04:25:44.907Z"
   }
 }
