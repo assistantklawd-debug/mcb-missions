@@ -1,0 +1,151 @@
+{
+  "mission": {
+    "name": "Client Portal",
+    "description": "client portal of past, current jobs & leads. they should be able to submit information with pictures to generated leads. ",
+    "blueprintId": "software-build",
+    "status": "building",
+    "stage": "building",
+    "progress": 25,
+    "agents": [],
+    "id": "8l0sg1f",
+    "createdAt": "2026-03-02",
+    "updatedAt": "2026-03-02",
+    "syncedAt": "2026-03-02T04:19:01.507Z"
+  },
+  "blueprint": {
+    "id": "software-build",
+    "name": "Software Build",
+    "description": "Turn feature ideas into deployed code",
+    "nodes": [
+      {
+        "id": "start",
+        "type": "start",
+        "label": "New Request",
+        "position": {
+          "x": 50,
+          "y": 150
+        }
+      },
+      {
+        "id": "analyze",
+        "type": "task",
+        "label": "Analyze",
+        "description": "Understand requirements",
+        "agentRole": "Chief",
+        "position": {
+          "x": 200,
+          "y": 150
+        }
+      },
+      {
+        "id": "branch",
+        "type": "branch",
+        "label": "Route",
+        "position": {
+          "x": 350,
+          "y": 150
+        }
+      },
+      {
+        "id": "code",
+        "type": "task",
+        "label": "Build",
+        "description": "Write the code",
+        "agentRole": "Engineer",
+        "position": {
+          "x": 500,
+          "y": 80
+        }
+      },
+      {
+        "id": "research",
+        "type": "task",
+        "label": "Research",
+        "description": "Investigate options",
+        "agentRole": "Leibniz",
+        "position": {
+          "x": 500,
+          "y": 220
+        }
+      },
+      {
+        "id": "qa",
+        "type": "task",
+        "label": "QA Test",
+        "description": "Run tests",
+        "agentRole": "Foreman",
+        "position": {
+          "x": 650,
+          "y": 150
+        }
+      },
+      {
+        "id": "review",
+        "type": "task",
+        "label": "Review",
+        "description": "Code review",
+        "agentRole": "Chief",
+        "position": {
+          "x": 800,
+          "y": 150
+        }
+      },
+      {
+        "id": "finish",
+        "type": "finish",
+        "label": "Done",
+        "position": {
+          "x": 950,
+          "y": 150
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e1",
+        "source": "start",
+        "target": "analyze"
+      },
+      {
+        "id": "e2",
+        "source": "analyze",
+        "target": "branch"
+      },
+      {
+        "id": "e3",
+        "source": "branch",
+        "target": "code",
+        "label": "Code"
+      },
+      {
+        "id": "e4",
+        "source": "branch",
+        "target": "research",
+        "label": "Research"
+      },
+      {
+        "id": "e5",
+        "source": "code",
+        "target": "qa"
+      },
+      {
+        "id": "e6",
+        "source": "research",
+        "target": "qa"
+      },
+      {
+        "id": "e7",
+        "source": "qa",
+        "target": "review"
+      },
+      {
+        "id": "e8",
+        "source": "review",
+        "target": "finish"
+      }
+    ],
+    "createdAt": "2026-03-01",
+    "updatedAt": "2026-03-01",
+    "syncedAt": "2026-03-02T04:19:01.507Z"
+  }
+}
